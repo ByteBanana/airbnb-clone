@@ -12,7 +12,11 @@ export default function Home(props) {
   return (
     <div className=''>
       <Head>
-        <title>Airbnb clone</title>
+        <title>Airbnb clone - clone website using TailwindCSS</title>
+        <meta
+          name='description'
+          content='This a clone airbnb clone website using Tailwind css for my portfolio'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
