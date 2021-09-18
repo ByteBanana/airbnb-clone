@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Banner = () => {
   return (
     <div
-      className='relative h-[120px] sm:h-[300px] lg:h-[400] xl:h-[500px]
+      className='relative h-[300px] sm:h-[300px] lg:h-[400] xl:h-[500px]
     2xl:h-[600px]'
     >
       <Image src='/hero.jpeg' layout='fill' objectFit='cover' />
