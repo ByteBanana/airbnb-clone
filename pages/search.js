@@ -4,6 +4,7 @@ import { useRouter } from 'next/dist/client/router';
 import React from 'react';
 import { format } from 'date-fns';
 import InfoCard from 'components/InfoCard';
+import Map from 'components/Map';
 
 const Search = ({ searchResults }) => {
   let range;
@@ -22,7 +23,7 @@ const Search = ({ searchResults }) => {
     <div className='h-screen'>
       <Header placeHolder={`${location} | ${range} | ${noOfGuests} guests`} />
       <main className='flex'>
-        <section className='flex-grow px-6 pt-14'>
+        <section className='flex-grow px-6 overflow-y-scroll pt-14'>
           <p className='text-xs'>
             300+ Stay {range} for {noOfGuests} number of guests
           </p>
@@ -55,6 +56,9 @@ const Search = ({ searchResults }) => {
               )
             )}
           </div>
+        </section>
+        <section className='hidden xl:inline-flex xl:min-w-[400px] max-h-[100%]'>
+          <Map searchResults={searchResults} />
         </section>
       </main>
       <Footer />
