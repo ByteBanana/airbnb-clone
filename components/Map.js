@@ -21,7 +21,7 @@ const Map = ({ searchResults }) => {
     <ReactMapGL
       {...viewport}
       mapStyle='mapbox://styles/saharatpaynok/cktss4szq03sv17mu9h20t7d9'
-      mapboxApiAccessToken={process.env.mapbox_key}
+      mapboxApiAccessToken={process.env.MAPBOX_KEY}
       onViewStateChange={(nextViewport) => setViewport(nextViewport)}
       height='100%'
       width='100%'

@@ -10,6 +10,7 @@
     "@heroicons/react": "^1.0.4",
     "d3-ease": "^3.0.1",
     "date-format": "^3.0.0",
+    "dotenv": "^10.0.0",
     "geolib": "^3.3.1",
     "mapbox-gl": "^2.4.1",
     "next": "latest",
